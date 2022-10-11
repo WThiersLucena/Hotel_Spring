@@ -12,6 +12,7 @@ public class Hotel_DTO {
 	public Hotel_DTO() {
 		
 	}
+	
 
 	public Hotel_DTO(Long id, String name) {
 		
