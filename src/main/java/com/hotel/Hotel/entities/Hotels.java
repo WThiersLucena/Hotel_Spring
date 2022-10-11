@@ -23,6 +23,10 @@ public class Hotels {
 		
 	}
 
+	public Hotels(Long id, String name) {		
+		this.id = id;
+		this.name = name;
+	}
 
 
 
@@ -51,6 +55,10 @@ public class Hotels {
 		this.name = name;
 	}
 
+
+
+
+	
 
 
 
