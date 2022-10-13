@@ -25,17 +25,20 @@ public class HoteisService {
 		return dto;
 	}
 	
-	// TRAZENDO LISTA COMPLETA 
-//	public Hotel_DTO findAll(){
-//		List<Hotels> entity = repository.findAll();
-//		Hotel_DTO dto = new Hotel_DTO(entity);
-//		return dto;
-//	}
-	
 	
 	public Collection<Hotels> findAll(){
 		List<Hotels> entity = repository.findAll();
 		return entity;
 		
 	}
+	
+	
+
+
+	
+	
+	
+	
+	
+	
 }
