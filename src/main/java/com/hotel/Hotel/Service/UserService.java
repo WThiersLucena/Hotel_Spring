@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.hotel.Hotel.DTO.UserDTO;
 import com.hotel.Hotel.Form.UserForm;
+import com.hotel.Hotel.entities.Hotels;
 import com.hotel.Hotel.entities.User;
 import com.hotel.Hotel.repositories.UserRepository;
 
@@ -15,6 +16,16 @@ public class UserService {
 
 	@Autowired
 	UserRepository userRepository;
+	
+	
+	
+	public Collection<User> findAll() {
+		List<User> entity = userRepository.findAll();
+		return entity;
+
+	}
+
+	
 
 	public UserDTO createUser(UserForm form) {
 		User user = convertToBusiness(form);
@@ -41,16 +52,18 @@ public class UserService {
 
 	}
 
-	public Collection<User> findAll() {
-		List<User> entity = userRepository.findAll();
-		return entity;
-
-	}
-	
+		
 	public UserDTO findById(Long id) {
 		User entity = userRepository.findById(id).get();
 		UserDTO dto = new UserDTO(entity);
 		return dto;
+	}
+
+	public void deleteById(Long id) {
+		if (userRepository.existsById(id)) {
+            userRepository.deleteById(id);
+        }
+		
 	}
 
 }

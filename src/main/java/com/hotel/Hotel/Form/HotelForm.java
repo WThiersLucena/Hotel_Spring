@@ -1,8 +1,6 @@
 package com.hotel.Hotel.Form;
 
-import lombok.Data;
 
-@Data
 public class HotelForm {
 
 	 private String name;
