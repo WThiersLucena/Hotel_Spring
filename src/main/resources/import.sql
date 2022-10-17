@@ -19,7 +19,9 @@ INSERT INTO tb_endhoteis(hotels_id, zipcode,address,number,complement) VALUES (1
 
 INSERT INTO tb_endhoteis(hotels_id, zipcode,address,number,complement) VALUES (2, '88880054', 'Rua Cordeiro de Faria','9872','');
 
+INSERT INTO tb_users(nome, email,cpf,senha) VALUES ('88880054', 'Rua Cordeiro de Faria','9872','Senha => 123456789');
 
+INSERT INTO tb_users(nome, email,cpf,senha) VALUES ('88880054', 'Rua Cordeiro de Faria','9872','Senha => 123456789');
 
 
 
